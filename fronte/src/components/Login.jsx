@@ -7,7 +7,7 @@ export default function Login() {
         <h1 className="text-3xl font-semibold text-center text-purple-700 uppercase">
           Login
         </h1>
-        <form className="mt-6">
+        <form className="mt-6" action="." method="post">
           <div className="mb-2">
             <label
               for="email"
