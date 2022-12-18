@@ -2,12 +2,13 @@ import React from "react";
 
 export default function Login() {
   return (
-    <div className="relative flex flex-col justify-center min-h-screen overflow-hidden">
-      <div className="w-full p-6 m-auto bg-white rounded-md shadow-xl shadow-violet-200 lg:max-w-xl">
-        <h1 className="text-3xl font-semibold text-center text-purple-700 uppercase">
+    <div className=" flex flex-col justify-center min-h-screen pl-8 pr-8 ">
+      <div className="w-screen p-8  m-auto bg-white rounded-md shadow-md shadow-[#1e3a8a] lg:max-w-xl">
+        <h1 className="text-3xl font-semibold text-center text-[#1e3a8a] uppercase">
           Login
         </h1>
-        <form className="mt-6" action="." method="post">
+
+        <form className="mt-6" action="/" method="POST">
           <div className="mb-2">
             <label
               for="email"
@@ -17,7 +18,9 @@ export default function Login() {
             </label>
             <input
               type="email"
-              className="block w-full px-4 py-2 mt-2 text-purple-700 bg-white border rounded-md focus:border-purple-400 focus:ring-purple-300 focus:outline-none focus:ring focus:ring-opacity-40"
+              id="email"
+              name="email"
+              className="block w-full px-4 py-2 mt-2 text-[#1e3a8a] bg-white border rounded-md focus:border-[#1e40af] focus:ring-[#1e40af] focus:outline-none focus:ring focus:ring-opacity-40"
             />
           </div>
           <div className="mb-2">
@@ -29,22 +32,24 @@ export default function Login() {
             </label>
             <input
               type="password"
-              className="block w-full px-4 py-2 mt-2 text-purple-700 bg-white border rounded-md focus:border-purple-400 focus:ring-purple-300 focus:outline-none focus:ring focus:ring-opacity-40"
+              id="password"
+              name="password"
+              className="block w-full px-4 py-2 mt-2 text-[#334155] bg-white border rounded-md focus:border-[#1e3a8a] focus:ring-[#1e40af] focus:outline-none focus:ring focus:ring-opacity-40"
             />
           </div>
-          <a href="#" className="text-xs text-purple-600 hover:underline">
+          <a href="#" className="text-xs text-[#1e3a8a] hover:underline">
             Forget Password?
           </a>
           <div className="mt-6">
-            <button className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-purple-700 rounded-md hover:bg-purple-600 focus:outline-none focus:bg-purple-600">
+            <button className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-[#152449] rounded-md hover:bg-[#1e3a8a] focus:outline-none focus:bg-[#1e3a8a]">
               Login
             </button>
           </div>
         </form>
-        <div className="relative flex items-center justify-center w-full mt-6 border border-t">
+        {/* <div className="relative flex items-center justify-center w-full mt-6 border border-t">
           <div className="absolute px-5 bg-white">Or</div>
-        </div>
-        <div className="flex mt-4 gap-x-2">
+        </div> */}
+        {/* <div className="flex mt-4 gap-x-2">
           <button
             type="button"
             className="flex items-center justify-center w-full p-2 border border-gray-600 rounded-md  hover:border-violet-600"
@@ -75,12 +80,12 @@ export default function Login() {
               <path d="M31.937 6.093c-1.177 0.516-2.437 0.871-3.765 1.032 1.355-0.813 2.391-2.099 2.885-3.631-1.271 0.74-2.677 1.276-4.172 1.579-1.192-1.276-2.896-2.079-4.787-2.079-3.625 0-6.563 2.937-6.563 6.557 0 0.521 0.063 1.021 0.172 1.495-5.453-0.255-10.287-2.875-13.52-6.833-0.568 0.964-0.891 2.084-0.891 3.303 0 2.281 1.161 4.281 2.916 5.457-1.073-0.031-2.083-0.328-2.968-0.817v0.079c0 3.181 2.26 5.833 5.26 6.437-0.547 0.145-1.131 0.229-1.724 0.229-0.421 0-0.823-0.041-1.224-0.115 0.844 2.604 3.26 4.5 6.14 4.557-2.239 1.755-5.077 2.801-8.135 2.801-0.521 0-1.041-0.025-1.563-0.088 2.917 1.86 6.36 2.948 10.079 2.948 12.067 0 18.661-9.995 18.661-18.651 0-0.276 0-0.557-0.021-0.839 1.287-0.917 2.401-2.079 3.281-3.396z"></path>
             </svg>
           </button>
-        </div>
+        </div> */}
 
         <p className="mt-8 text-xs font-light text-center text-gray-700">
           {" "}
           Don't have an account?{" "}
-          <a href="#" className="font-medium text-purple-600 hover:underline">
+          <a href="#" className="font-medium text-[#1e3a8a] hover:underline">
             Sign up
           </a>
         </p>

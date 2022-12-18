@@ -2,7 +2,11 @@
 module.exports = {
   content: [],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        "login-background": "url(login/fronte/public/t.png')",
+      },
+    },
   },
   plugins: [],
-}
+};
