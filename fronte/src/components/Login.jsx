@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Login() {
   return (
-    <div className=" flex flex-col justify-center min-h-screen pl-8 pr-8 ">
+    <div className=" flex flex-col justify-center min-h-screen pl-8 pr-56 ">
       <div className="w-screen p-8  m-auto bg-white rounded-md shadow-md shadow-[#1e3a8a] lg:max-w-xl">
         <h1 className="text-3xl font-semibold text-center text-[#1e3a8a] uppercase">
           Login
